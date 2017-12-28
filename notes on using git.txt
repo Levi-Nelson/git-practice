@@ -1,0 +1,33 @@
+## initialize git repo from existing code
+
+git init: creates local git repo
+git status: shows what has been staged for commits
+create a .gitignore file with list of files to be excluded if needed
+git add <file name>: stage files for commit
+git reset <file name>: remove file from commit staging
+git commit -m "<description of changes>": commits changes to local repo
+
+
+
+##Common Workflow
+
+git branch <branch name>:create a branch
+git checkout <branch name>:start working on this branch
+modify source code
+git status: see modified files
+git add -A: add all changes
+git commit -m "<notes about changes>": commits changes to local repo branch
+git push origin <branch>: pushes changes to remote repo branch
+
+##Merge a brach with remote repo
+
+git checkout master: start working on master branch
+git pull origin master:pull any changes from remote master to be up to date
+git branch --merged: show merged branches
+git merge <branch name>:merge changes from branch into master
+git push origin master: push merged master branch onto remote repo
+
+## Useful commands
+(git branch: lists local branches)
+(git branch -a: lists all branches including remote repo)
+(git status: shows what has been staged for commits
